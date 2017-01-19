@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","sources":["styles.scss"],"sourcesContent":["$primary-color: #ff3b30;\r\n\r\nh1 {\r\n  color: $primary-color;\r\n}"],"mappings":"AAEA,AAAA,EAAE,CAAC;EACD,KAAK,EAHS,OAAO,GAItB","names":[]}
