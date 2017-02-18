@@ -1,0 +1,8 @@
+
+@import "variables";
+
+@mixin border-radius-prefix($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}

@@ -1,0 +1,53 @@
+
+@import '../modules/variables';
+@import '../modules/placeholders';
+
+.nav-bar--fixed {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: $nav-bar__background--color-white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-bar--height;
+  color: $nav-bar__link--default-color;
+}
+
+.nav-bar__logo--left-fixed {
+  @extend %nav-bar__element;
+
+  float: left;
+  font-size: $nav-bar__logo--default-font-size;
+  font-weight: bolder;
+  padding-left: 5%;
+
+  > .nav-bar--red {
+    color: $nav-bar__logo--span-color;
+  }
+}
+
+.nav-bar__list--right {
+  @extend %nav-bar__element;
+  float: right;
+  padding-right: 5%;
+}
+
+.nav-bar__link {
+
+  &--default {
+    @extend %nav-bar__link;
+    text-decoration: none;
+  }
+
+  &--red-circle-border {
+    @extend %nav-bar__link;
+    border: 2px solid $nav-bar__link--border-color;
+    @include border-radius-prefix(12px);
+  }
+
+  &--toggle {
+    @extend %nav-bar__link;
+    display: none;
+  }
+}

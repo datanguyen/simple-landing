@@ -1,4 +1,57 @@
-h1 {
-  color: #ff3b30; }
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%; }
+
+.nav-bar__logo--left-fixed, .nav-bar__list--right {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.nav-bar__link--default, .nav-bar__link--red-circle-border, .nav-bar__link--toggle {
+  display: block;
+  text-decoration: none;
+  padding: 1px 15px;
+  float: left;
+  color: #808080; }
+
+.nav-bar--fixed {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  color: #808080; }
+
+.nav-bar__logo--left-fixed {
+  float: left;
+  font-size: 22px;
+  font-weight: bolder;
+  padding-left: 5%; }
+  .nav-bar__logo--left-fixed > .nav-bar--red {
+    color: #ff3b30; }
+
+.nav-bar__list--right {
+  float: right;
+  padding-right: 5%; }
+
+.nav-bar__link--default {
+  text-decoration: none; }
+
+.nav-bar__link--red-circle-border {
+  border: 2px solid #ff3b30;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px; }
+
+.nav-bar__link--toggle {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */

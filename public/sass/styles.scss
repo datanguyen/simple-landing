@@ -1,5 +1,6 @@
-$primary-color: #ff3b30;
 
-h1 {
-  color: $primary-color;
-}
+@import 'modules/mixins';
+@import 'modules/variables';
+
+@import "partials/common";
+@import "partials/navbar";
