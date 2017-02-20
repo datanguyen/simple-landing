@@ -1,6 +1,13 @@
 
-@import 'modules/mixins';
-@import 'modules/variables';
+@import 'font-icons';
 
-@import "partials/common";
-@import "partials/navbar";
+@import "partials/base";
+@import "partials/global";
+
+@import "partials/nav-bar/navbar";
+@import "partials/home-section/home";
+@import "partials/explore-section/explore";
+@import "partials/pricing-section/pricing";
+@import "partials/service-section/service";
+@import "partials/team-section/team";
+@import "partials/footer-section/footer";

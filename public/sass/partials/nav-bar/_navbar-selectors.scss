@@ -1,8 +1,6 @@
 
-@import "variables";
-@import "mixins";
+@import "../base";
 
-//navigation bars
 %nav-bar__element {
   display: block;
   padding-top: 15px;
@@ -12,9 +10,8 @@
 %nav-bar__link {
   display: block;
   text-decoration: none;
-  padding: 1px 15px;
+  padding: 5px 15px;
   float: left;
   color: $nav-bar__link--default-color;
+  font-size: $nav-bar__link--default-font-size;
 }
-
-

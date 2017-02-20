@@ -1,4 +1,6 @@
 
+$default-font: 'PT Sans', sans-serif;
+
 //breakpoint
 $mobile--max-width: 425px;
 $tablet--max-width: 768px;
@@ -8,7 +10,27 @@ $tablet--max-width: 768px;
 $nav-bar--height: 55px;
 $nav-bar__background--color-white: #ffffff;
 $nav-bar__logo--span-color: #ff3b30;
+$nav-bar__logo-default-color: #000000;
 $nav-bar__link--default-color: #808080;
 $nav-bar__link--border-color: #ff3b30;
-$nav-bar__link--default-font-size: 17px;
-$nav-bar__logo--default-font-size: 22px;
+$nav-bar__link--default-font-size: 15px;
+$nav-bar__logo--default-font-size: 20px;
+
+//home section
+$home__background--color: #707374;
+
+//explore section
+$explore__intro--background-color: #ffffff;
+$explore__detail--background-color: #f1f1f1;
+
+//pricing section
+$pricing__background--color: #f1faff;
+
+//service section
+$service__background--color: #ffffff;
+
+//team section
+$team__background--color: #f1faff;
+
+//footer section
+$footer__background--color: #3f5267;

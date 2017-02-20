@@ -1,17 +1,17 @@
 
-@import '../modules/variables';
-@import '../modules/placeholders';
+@import "../base";
+@import "navbar-selectors";
 
 .nav-bar--fixed {
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
   background-color: $nav-bar__background--color-white;
   position: fixed;
   top: 0;
   width: 100%;
   height: $nav-bar--height;
-  color: $nav-bar__link--default-color;
+  color: $nav-bar__logo-default-color;
 }
 
 .nav-bar__logo--left-fixed {
@@ -42,8 +42,9 @@
 
   &--red-circle-border {
     @extend %nav-bar__link;
+    padding: 4px 10px;
     border: 2px solid $nav-bar__link--border-color;
-    @include border-radius-prefix(12px);
+    @include border-radius-prefix(20px);
   }
 
   &--toggle {
