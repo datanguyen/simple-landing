@@ -1,5 +1,6 @@
 
 $default-font: 'PT Sans', sans-serif;
+$default-text-color: #808080;
 
 //breakpoint
 $mobile--max-width: 425px;
@@ -18,6 +19,8 @@ $nav-bar__logo--default-font-size: 20px;
 
 //home section
 $home__background--color: #707374;
+$home__paragraph--default-color: #e2e2e3;
+$home__header--default-color: #fefefe;
 
 //explore section
 $explore__intro--background-color: #ffffff;
@@ -34,3 +37,13 @@ $team__background--color: #f1faff;
 
 //footer section
 $footer__background--color: #3f5267;
+
+//button
+$button__height--large: 50px;
+$button__width--large: 180px;
+$button__height--small: 80px;
+$button__width--small: 266px;
+$button__background-color--default: #1fb5f6;
+$button--default-margin: 5px;
+$button__text--default-color: #fefefe;
+$button__text--default-font-size: 17px;

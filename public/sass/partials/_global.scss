@@ -1,4 +1,6 @@
 
+@import "base";
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8,5 +10,6 @@
 html, body {
   margin: 0;
   height: 100%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: $default-font;
+  color: $default-text-color;
 }

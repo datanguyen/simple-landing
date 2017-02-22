@@ -1,0 +1,26 @@
+
+@import "../base";
+
+%button {
+  background-color: $button__background-color--default;
+  border: none;
+  color: $button__text--default-color;
+  font-size: $button__text--default-font-size;
+  text-align: center;
+  text-decoration: none;
+  margin: $button--default-margin;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include border-radius-prefix(4px);
+}
+
+%button--large {
+  width: $button__width--large;
+  height: $button__height--large;
+}
+
+%button--small {
+  width: $button__width--small;
+  height: $button__height--small;
+}
+

@@ -1,6 +1,6 @@
 
-@import "../base";
-@import "navbar-selectors";
+@import "base";
+@import "selectors/navbar-selectors";
 
 .nav-bar--fixed {
   margin: 0;
@@ -37,7 +37,6 @@
 
   &--default {
     @extend %nav-bar__link;
-    text-decoration: none;
   }
 
   &--red-circle-border {

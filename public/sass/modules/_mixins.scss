@@ -6,3 +6,25 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
 }
+
+@mixin flex-box-prefix() {
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin flex-flow-prefix($value) {
+  flex-flow: $value;
+  -webkit-flex-flow: $value;
+}
+
+@mixin justify-content-prefix($value) {
+  justify-content: $value;
+  -webkit-justify-content: $value;
+}
+
+@mixin flex-prefix($values) {
+  flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+}
+
