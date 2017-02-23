@@ -1,0 +1,25 @@
+
+@import "../../modules/all";
+
+.pricing-section {
+  height: 130%;
+  background-color: $pricing__background--color;
+
+  > * {
+    @extend %display-flex;
+  }
+
+  > .pricing-section--upper {
+    height:28%;
+  }
+}
+
+.pricing-section--upper {
+  > * {
+    margin: auto;
+  }
+
+  .pricing-section__article {
+    @extend %introduction-article--upper;
+  }
+}

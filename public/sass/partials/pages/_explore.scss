@@ -1,0 +1,34 @@
+
+@import "../../modules/all";
+
+.explore-section {
+  height: 130%;
+
+  > * {
+    @extend %display-flex;
+  }
+
+  .explore-section--upper {
+    height:28%;
+    background-color: $explore--upper-background-color;
+  }
+
+  .explore-section--lower {
+    height: 100%;
+    background-color: $explore--lower-background-color;
+  }
+
+}
+
+.explore-section--upper {
+
+  > * {
+    margin: auto;
+  }
+
+  .explore-section__article {
+    @extend %introduction-article--upper;
+  }
+}
+
+

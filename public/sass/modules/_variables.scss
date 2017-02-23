@@ -2,6 +2,10 @@
 $default-font: 'PT Sans', sans-serif;
 $default-text-color: #808080;
 
+//font
+$icon-moon-url: '../fonts/icomoon/icomoon';
+$simple-line-icon-url: "../fonts/simple-line-icons/Simple-Line-Icons";
+
 //breakpoint
 $mobile--max-width: 425px;
 $tablet--max-width: 768px;
@@ -23,8 +27,9 @@ $home__paragraph--default-color: #e2e2e3;
 $home__header--default-color: #fefefe;
 
 //explore section
-$explore__intro--background-color: #ffffff;
-$explore__detail--background-color: #f1f1f1;
+$explore--upper-background-color: #ffffff;
+$explore--lower-background-color: #f1f1f1;
+$explore__header--default-color: #000000;
 
 //pricing section
 $pricing__background--color: #f1faff;
@@ -47,3 +52,10 @@ $button__background-color--default: #1fb5f6;
 $button--default-margin: 5px;
 $button__text--default-color: #fefefe;
 $button__text--default-font-size: 17px;
+
+//article
+$intro-article__height: 300px;
+$intro-article__width: 700px;
+$article__header--font-size: 35px;
+$article__header--default-color: #000000;
+$article__paragraph--default-color: #808080;

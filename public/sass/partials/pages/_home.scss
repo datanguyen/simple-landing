@@ -1,27 +1,15 @@
 
-@import "base";
-@import "selectors/button";
+@import "../../modules/all";
 
 .home-section {
+  @extend %display-flex;
   height: 100%;
   background-color: $home__background--color;
-  @include flex-box-prefix;
 }
 
 .home-section__article {
-  width: 600px;
-  height: 300px;
+  @extend %home-section__intro-article;
   margin: auto;
-  text-align: center;
-
-  > .home-section__header {
-    font-size: 25px;
-    color: $home__header--default-color;
-  }
-
-  > .home-section__paragraph {
-    color: $home__paragraph--default-color;
-  }
 
   > .home-section__button-group > * {
     @extend %button;

@@ -1,13 +1,14 @@
 
-@import 'font-icons';
 
 @import "partials/base";
 @import "partials/global";
 
-@import "partials/nav-bar";
-@import "partials/home-section";
-@import "partials/explore-section";
-@import "partials/pricing-section";
-@import "partials/service-section";
-@import "partials/team-section";
-@import "partials/footer-section";
+@import "partials/components/_nav-bar";
+@import "partials/pages/home";
+@import "partials/pages/explore";
+@import "partials/pages/pricing";
+@import "partials/pages/service";
+@import "partials/pages/team";
+@import "partials/pages/footer";
+
+@import 'vendor/font-icons';

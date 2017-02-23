@@ -1,0 +1,6 @@
+
+@import "../all";
+
+%display-flex {
+  @include flex-box-prefix;
+}

@@ -1,0 +1,43 @@
+
+@import "../modules/all";
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url($icon-moon-url + '.eot');
+  src: url($icon-moon-url + '.eot?#iefix') format('embedded-opentype'),
+  url($icon-moon-url + '.woff') format('woff'),
+  url($icon-moon-url + '.ttf') format('truetype'),
+  url($icon-moon-url + '.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SimpleLineIcons';
+  src: url($simple-line-icon-url + '.eot');
+  src: url($simple-line-icon-url + '.eot?#iefix') format('embedded-opentype'),
+  url($simple-line-icon-url + '.woff') format('woff'),
+  url($simple-line-icon-url + '.ttf') format('truetype'),
+  url($simple-line-icon-url + '.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+span.font-icon-moon[data-icon]::before {
+  @extend %icon--default;
+  font-family: 'Icomoon', sans-serif;
+  content: attr(data-icon);
+}
+
+span.font-simple-line-icon[data-icon]::before {
+  @extend %icon--default;
+  font-family: 'SimpleLineIcons', sans-serif;
+  content: attr(data-icon);
+}
+
+%icon--default {
+  @extend %icon--default;
+  font-size: 50px;
+  color: #1fb5f6;
+  margin: 0;
+}
