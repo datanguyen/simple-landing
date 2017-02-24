@@ -1,12 +1,41 @@
-.home-section__article, .explore-section--upper .explore-section__article, .pricing-section--upper .pricing-section__article {
+@font-face {
+  font-family: 'Icomoon';
+  src: url("../fonts/icomoon/icomoon.eot");
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SimpleLineIcons';
+  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot");
+  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/simple-line-icons/Simple-Line-Icons.woff") format("woff"), url("../fonts/simple-line-icons/Simple-Line-Icons.ttf") format("truetype"), url("../fonts/simple-line-icons/Simple-Line-Icons.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.font-icon-moon[data-icon]::before {
+  font-family: 'Icomoon', sans-serif;
+  content: attr(data-icon); }
+
+.font-simple-line-icon[data-icon]::before {
+  font-family: 'SimpleLineIcons', sans-serif;
+  content: attr(data-icon); }
+
+.font-icon-moon[data-icon]::before, .font-simple-line-icon[data-icon]::before {
+  color: #1fb5f6;
+  margin: 0; }
+
+.icon-large {
+  font-size: 50px; }
+
+.home-section__article, .explore-section--upper .explore-section__intro-article, .pricing-section--upper .pricing-section__intro-article, .service-section--upper .service-section__intro-article, .team-section--upper .team-section__intro-article, .explore-section--lower .explore-section__article--typical {
   width: 700px;
   height: 300px;
   text-align: center; }
-  .home-section__article > .article__header, .explore-section--upper .explore-section__article > .article__header, .pricing-section--upper .pricing-section__article > .article__header {
+  .home-section__article > .article__header, .explore-section--upper .explore-section__intro-article > .article__header, .pricing-section--upper .pricing-section__intro-article > .article__header, .service-section--upper .service-section__intro-article > .article__header, .team-section--upper .team-section__intro-article > .article__header, .explore-section--lower .explore-section__article--typical > .article__header {
     font-size: 35px;
     color: #000000;
     text-transform: capitalize; }
-  .home-section__article > .article__paragraph, .explore-section--upper .explore-section__article > .article__paragraph, .pricing-section--upper .pricing-section__article > .article__paragraph {
+  .home-section__article > .article__paragraph, .explore-section--upper .explore-section__intro-article > .article__paragraph, .pricing-section--upper .pricing-section__intro-article > .article__paragraph, .service-section--upper .service-section__intro-article > .article__paragraph, .team-section--upper .team-section__intro-article > .article__paragraph, .explore-section--lower .explore-section__article--typical > .article__paragraph {
     color: #808080; }
 
 .home-section__article {
@@ -16,10 +45,19 @@
   .home-section__article > .article__paragraph {
     color: #e2e2e3; }
 
-.explore-section--upper .explore-section__article, .pricing-section--upper .pricing-section__article {
-  margin-top: 50px; }
-  .explore-section--upper .explore-section__article > *, .pricing-section--upper .pricing-section__article > * {
+.explore-section--upper .explore-section__intro-article, .pricing-section--upper .pricing-section__intro-article, .service-section--upper .service-section__intro-article, .team-section--upper .team-section__intro-article {
+  margin-top: 70px; }
+  .explore-section--upper .explore-section__intro-article > *, .pricing-section--upper .pricing-section__intro-article > *, .service-section--upper .service-section__intro-article > *, .team-section--upper .team-section__intro-article > * {
     margin: 5px; }
+
+.explore-section--lower .explore-section__article--typical {
+  width: 310px;
+  height: 100px;
+  text-align: left; }
+  .explore-section--lower .explore-section__article--typical > .article__header {
+    font-size: 20px; }
+    .explore-section--lower .explore-section__article--typical > .article__header > span {
+      margin-right: 20px; }
 
 .home-section__article > .home-section__button-group > * {
   background-color: #1fb5f6;
@@ -39,9 +77,25 @@
   width: 180px;
   height: 50px; }
 
-.home-section, .explore-section > *, .pricing-section > * {
+.home-section, .explore-section > *, .pricing-section > *, .service-section > *, .team-section > * {
   display: flex;
   display: -webkit-flex; }
+
+.explore-section--upper > *, .pricing-section--upper > *, .service-section--upper > *, .team-section--upper > * {
+  margin: auto; }
+
+.explore-section--lower {
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap; }
+
+.explore-section--lower {
+  align-content: center;
+  -webkit-align-content: center; }
+
+.explore-section--lower > .explore-section__image--main {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
 
 .nav-bar__logo--left-fixed, .nav-bar__list--right {
   display: block;
@@ -55,10 +109,6 @@
   float: left;
   color: #808080;
   font-size: 15px; }
-
-.home-section, .explore-section > *, .pricing-section > * {
-  display: flex;
-  display: -webkit-flex; }
 
 * {
   box-sizing: border-box;
@@ -121,63 +171,55 @@ html, body {
   background-color: #ff3b30; }
 
 .explore-section {
-  height: 130%; }
+  height: 140%; }
   .explore-section .explore-section--upper {
     height: 28%;
     background-color: #ffffff; }
   .explore-section .explore-section--lower {
-    height: 100%;
+    height: 72%;
     background-color: #f1f1f1; }
 
-.explore-section--upper > * {
-  margin: auto; }
+.explore-section--lower > .explore-section__image--main {
+  height: 500px;
+  width: 700px;
+  margin: 50px 120px 0 0; }
+
+.explore-section--lower > .explore-section__article-group {
+  margin-top: 80px; }
+
+.explore-section--lower .explore-section__article--typical {
+  margin-bottom: 50px; }
 
 .pricing-section {
   height: 130%;
   background-color: #f1faff; }
   .pricing-section > .pricing-section--upper {
     height: 28%; }
-
-.pricing-section--upper > * {
-  margin: auto; }
+  .pricing-section > .pricing-section--intermediate {
+    height: 45%; }
+  .pricing-section > .pricing-section--lower {
+    height: 20%; }
 
 .service-section {
-  height: 100%;
+  height: 130%;
   background-color: #ffffff; }
+  .service-section .service-section--upper {
+    height: 28%; }
+  .service-section > .service-section--intermediate {
+    height: 45%; }
+  .service-section > .service-section--lower {
+    height: 20%; }
 
 .team-section {
-  height: 100%;
+  height: 130%;
   background-color: #f1faff; }
+  .team-section .team-section--upper {
+    height: 28%; }
+  .team-section > .team-section--lower {
+    height: 100%; }
 
 .footer-section {
   height: 100%;
   background-color: #3f5267; }
-
-@font-face {
-  font-family: 'Icomoon';
-  src: url("../fonts/icomoon/icomoon.eot");
-  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SimpleLineIcons';
-  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot");
-  src: url("../fonts/simple-line-icons/Simple-Line-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/simple-line-icons/Simple-Line-Icons.woff") format("woff"), url("../fonts/simple-line-icons/Simple-Line-Icons.ttf") format("truetype"), url("../fonts/simple-line-icons/Simple-Line-Icons.svg#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-span.font-icon-moon[data-icon]::before {
-  font-family: 'Icomoon', sans-serif;
-  content: attr(data-icon); }
-
-span.font-simple-line-icon[data-icon]::before {
-  font-family: 'SimpleLineIcons', sans-serif;
-  content: attr(data-icon); }
-
-span.font-icon-moon[data-icon]::before, span.font-simple-line-icon[data-icon]::before {
-  font-size: 50px;
-  color: #1fb5f6;
-  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

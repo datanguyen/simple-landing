@@ -10,16 +10,22 @@
   }
 
   > .pricing-section--upper {
-    height:28%;
+    height: 28%;
+  }
+
+  > .pricing-section--intermediate {
+    height: 45%;
+  }
+
+  > .pricing-section--lower {
+    height: 20%;
   }
 }
 
 .pricing-section--upper {
-  > * {
-    margin: auto;
-  }
+  @extend %flex--perfect-centering;
 
-  .pricing-section__article {
+  .pricing-section__intro-article {
     @extend %introduction-article--upper;
   }
 }

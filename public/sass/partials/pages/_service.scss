@@ -2,6 +2,30 @@
 @import "../../modules/all";
 
 .service-section {
-  height: 100%;
+  height: 130%;
   background-color: $service__background--color;
+
+  > * {
+    @extend %display-flex;
+  }
+
+  .service-section--upper {
+    height: 28%;
+  }
+
+  > .service-section--intermediate {
+    height: 45%;
+  }
+
+  > .service-section--lower {
+    height: 20%;
+  }
+}
+
+.service-section--upper {
+  @extend %flex--perfect-centering;
+
+  .service-section__intro-article {
+    @extend %introduction-article--upper;
+  }
 }

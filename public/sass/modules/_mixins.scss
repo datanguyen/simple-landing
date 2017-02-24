@@ -21,6 +21,11 @@
   -webkit-justify-content: $value;
 }
 
+@mixin align-content-prefix($value) {
+  align-content: $value;
+  -webkit-align-content: $value;
+}
+
 @mixin flex-prefix($values) {
   flex: $values;
   -webkit-flex: $values;

@@ -1,0 +1,13 @@
+
+@import "../all";
+
+%image--default {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+%image--rounded {
+  @extend %image--default;
+  @include border-radius-prefix(50%);
+}

@@ -1,7 +1,7 @@
 
 @import "../all";
 
-%introduction-article {
+%article {
   width: $intro-article__width;
   height: $intro-article__height;
   text-align: center;
@@ -20,7 +20,7 @@
 
 
 %home-section__intro-article {
-  @extend %introduction-article;
+  @extend %article;
   width: 600px;
 
   > .article__header {
@@ -33,10 +33,25 @@
 }
 
 %introduction-article--upper {
-  @extend %introduction-article;
-  margin-top: 50px;
+  @extend %article;
+  margin-top: 70px;
 
   > * {
     margin: 5px;
+  }
+}
+
+%typical-article {
+  @extend %article;
+  width: 310px;
+  height: 100px;
+  text-align: left;
+
+  > .article__header {
+    font-size: 20px;
+
+    > span {
+      margin-right: 20px;
+    }
   }
 }

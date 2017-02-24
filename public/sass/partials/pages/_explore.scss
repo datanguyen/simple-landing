@@ -2,33 +2,53 @@
 @import "../../modules/all";
 
 .explore-section {
-  height: 130%;
+  height: 140%;
 
   > * {
     @extend %display-flex;
   }
 
   .explore-section--upper {
-    height:28%;
+    height: 28%;
     background-color: $explore--upper-background-color;
   }
 
   .explore-section--lower {
-    height: 100%;
+    height: 72%;
     background-color: $explore--lower-background-color;
   }
-
 }
 
 .explore-section--upper {
+  @extend %flex--perfect-centering;
 
-  > * {
-    margin: auto;
-  }
-
-  .explore-section__article {
+  .explore-section__intro-article {
     @extend %introduction-article--upper;
   }
 }
+
+.explore-section--lower {
+  @extend %flex--column-wrap;
+  @extend %flex--vertically;
+
+
+  > .explore-section__image--main {
+    @extend %image--default;
+    height: 500px;
+    width: 700px;
+    margin: 50px 120px 0 0;
+  }
+
+  > .explore-section__article-group {
+    margin-top: 80px;
+  }
+
+  .explore-section__article--typical {
+    @extend %typical-article;
+    margin-bottom: 50px;
+  }
+
+}
+
 
 

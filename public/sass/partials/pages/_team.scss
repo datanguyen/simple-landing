@@ -2,6 +2,26 @@
 @import "../../modules/all";
 
 .team-section {
-  height: 100%;
+  height: 130%;
   background-color: $team__background--color;
+
+  > * {
+    @extend %display-flex;
+  }
+
+  .team-section--upper {
+    height: 28%;
+  }
+
+  > .team-section--lower {
+    height: 100%;
+  }
+}
+
+.team-section--upper {
+  @extend %flex--perfect-centering;
+
+  .team-section__intro-article {
+    @extend %introduction-article--upper;
+  }
 }
