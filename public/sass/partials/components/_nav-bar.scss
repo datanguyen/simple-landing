@@ -11,6 +11,7 @@
   width: 100%;
   height: $nav-bar--height;
   color: $nav-bar__logo-default-color;
+  z-index: 10000;
 }
 
 .nav-bar__logo--left-fixed {

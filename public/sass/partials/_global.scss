@@ -15,3 +15,8 @@ html, body {
   font-family: $default-font;
   color: $default-text-color;
 }
+
+.color--red {
+  color: red;
+  font-weight: bold;
+}

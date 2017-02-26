@@ -2,7 +2,7 @@
 @import "../../modules/all";
 
 .pricing-section {
-  height: 130%;
+  height: 120%;
   background-color: $pricing__background--color;
 
   > * {
@@ -18,7 +18,7 @@
   }
 
   > .pricing-section--lower {
-    height: 20%;
+    height: 27%;
   }
 }
 
@@ -27,5 +27,54 @@
 
   .pricing-section__intro-article {
     @extend %introduction-article--upper;
+  }
+}
+
+.pricing-section--intermediate {
+  @extend %flex--row--wrap;
+  @extend %flex--horizontally;
+
+  > * {
+    margin: 10px;
+  }
+
+  .pricing-section__article--vertical {
+    @extend %vertical-article;
+
+    .vertical-article__header {
+      font-size: 13px;
+    }
+
+    .vertical-article__price-tag {
+      color : #6d6d6d;
+
+      > .price-tag {
+        font-size: 70px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+   .vertical-article__button {
+
+     &--default {
+       @extend %button;
+       @extend %button--small;
+     }
+
+     &--red {
+       @extend %button;
+       @extend %button--small;
+       @extend %button--red;
+     }
+  }
+}
+
+.pricing-section--lower {
+  @extend %flex--horizontally;
+
+  > .paragraph--lower {
+    width: 530px;
+    margin-top: 50px;
   }
 }

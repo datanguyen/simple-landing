@@ -37,10 +37,17 @@
 
 %icon--default {
   @extend %icon--default;
-  color: #1fb5f6;
   margin: 0;
 }
 
 .icon-large {
   font-size: 50px;
+}
+
+.icon--black {
+  color: black;
+}
+
+.icon--less-blue {
+  color: #1fb5f6;
 }

@@ -2,19 +2,19 @@
 @import "../../modules/all";
 
 .explore-section {
-  height: 140%;
+  height: 130%;
 
   > * {
     @extend %display-flex;
   }
 
   .explore-section--upper {
-    height: 28%;
+    height: 27%;
     background-color: $explore--upper-background-color;
   }
 
   .explore-section--lower {
-    height: 72%;
+    height: 73%;
     background-color: $explore--lower-background-color;
   }
 }
@@ -28,26 +28,30 @@
 }
 
 .explore-section--lower {
-  @extend %flex--column-wrap;
-  @extend %flex--vertically;
+  @extend %flex--row--wrap;
+  @extend %flex--horizontally;
 
-
-  > .explore-section__image--main {
+  .explore-section__image--main {
     @extend %image--default;
     height: 500px;
     width: 700px;
     margin: 50px 120px 0 0;
   }
 
-  > .explore-section__article-group {
+  .explore-section__article-group {
     margin-top: 80px;
   }
 
   .explore-section__article--typical {
     @extend %typical-article;
     margin-bottom: 50px;
-  }
 
+    .article__header > span {
+      margin-right: 10px;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
 }
 
 

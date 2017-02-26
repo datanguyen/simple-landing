@@ -2,7 +2,7 @@
 @import "../../modules/all";
 
 .service-section {
-  height: 130%;
+  height: 120%;
   background-color: $service__background--color;
 
   > * {
@@ -14,11 +14,13 @@
   }
 
   > .service-section--intermediate {
-    height: 45%;
+    height: 54%;
+    width: 90%;
+    margin: auto;
   }
 
   > .service-section--lower {
-    height: 20%;
+    height: 18%;
   }
 }
 
@@ -27,5 +29,28 @@
 
   .service-section__intro-article {
     @extend %introduction-article--upper;
+  }
+}
+
+.service-section--intermediate {
+  @extend %flex--row--wrap;
+  @extend %flex--horizontally;
+
+  .service-section__article--typical {
+    @extend %typical-article;
+  }
+
+  .font-simple-line-icon,
+  .font-icon-moon {
+    padding: 25px 20px 30px 0;
+  }
+}
+
+.service-section--lower {
+  .lower-service__button--blue {
+    @extend %button;
+    @extend %button--small;
+
+    margin: 0 auto;
   }
 }

@@ -6,6 +6,13 @@
   -moz-border-radius: $radius;
 }
 
+@mixin box-shadow-prefix($values) {
+  box-shadow: $values;
+  -webkit-box-shadow: $values;
+  -moz-box-shadow: $values;
+  -o-box-shadow: $values;
+}
+
 @mixin flex-box-prefix() {
   display: flex;
   display: -webkit-flex;
