@@ -1,0 +1,17 @@
+
+
+%icon--default {
+  margin: 0;
+  color: #1fb5f6;
+}
+
+%icon--large {
+  @extend %icon--default;
+  font-size: 50px;
+}
+
+%icon--medium {
+  @extend %icon--default;
+  font-size: 30px;
+  font-weight: normal;
+}

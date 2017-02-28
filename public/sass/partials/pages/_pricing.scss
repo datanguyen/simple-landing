@@ -1,4 +1,3 @@
-
 @import "../../modules/all";
 
 .pricing-section {
@@ -44,29 +43,40 @@
     .vertical-article__header {
       font-size: 13px;
     }
+  }
 
-    .vertical-article__price-tag {
-      color : #6d6d6d;
+  .pricing-section__price-tag {
+    color : #6d6d6d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
-      > .price-tag {
-        font-size: 70px;
-        padding-right: 5px;
-      }
+    > .price-tag {
+      font-size: 60px;
+      padding-right: 5px;
+    }
+
+    > .icon-money {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 5px;
+      top: -25px;
+      position: relative;
+      z-index: 3;
     }
   }
 
-   .vertical-article__button {
+  .vertical-article__button {
 
-     &--default {
-       @extend %button;
-       @extend %button--small;
-     }
+    &--default {
+      @extend %button;
+      @extend %button--small;
+    }
 
-     &--red {
-       @extend %button;
-       @extend %button--small;
-       @extend %button--red;
-     }
+    &--red {
+      @extend %button;
+      @extend %button--small;
+      @extend %button--red;
+    }
   }
 }
 

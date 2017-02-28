@@ -1,10 +1,10 @@
 
-@import 'vendor/font-icons';
 
 @import "partials/global";
 @import "partials/base";
 
-@import "partials/components/_nav-bar";
+@import "partials/components/font-icons";
+@import "partials/components/nav-bar";
 @import "partials/pages/home";
 @import "partials/pages/explore";
 @import "partials/pages/pricing";

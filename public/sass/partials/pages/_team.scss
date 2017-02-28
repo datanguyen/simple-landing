@@ -12,7 +12,7 @@
     height: 28%;
   }
 
-  > .team-section--lower {
+  .team-section--lower {
     height: 72%;
   }
 }
@@ -56,30 +56,30 @@
       top: -70px;
       z-index: 1;
     }
-  }
-
-  .team-section__article--vertical {
-
-    .vertical-article__header {
-      margin-top: 50px;
-      margin-bottom: 30px;
-      font-weight: bolder;
-      font-size: 15px;
-
-      .header__note {
-        text-transform: capitalize;
-      }
-    }
 
     .icon-group {
       display: inline-block;
       margin-top: 20px;
+
+      > * {
+        margin: 5px;
+        color: black;
+        font-weight: bold;
+      }
     }
   }
 }
 
-.icon-group > * {
-  font-weight: bold;
-  font-size: 25px;
-  margin: 5px;
+.team-section__article--vertical {
+
+  .vertical-article__header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+
+    .header__note {
+      text-transform: capitalize;
+    }
+  }
 }

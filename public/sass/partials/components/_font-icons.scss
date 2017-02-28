@@ -1,5 +1,5 @@
 
-@import "../modules/all";
+@import "../../modules/all";
 
 @font-face {
   font-family: 'Icomoon';
@@ -24,30 +24,27 @@
 }
 
 .font-icon-moon[data-icon]::before {
-  @extend %icon--default;
   font-family: 'Icomoon', sans-serif;
   content: attr(data-icon);
 }
 
 .font-simple-line-icon[data-icon]::before {
-  @extend %icon--default;
   font-family: 'SimpleLineIcons', sans-serif;
   content: attr(data-icon);
 }
 
-%icon--default {
+.icon--default {
   @extend %icon--default;
-  margin: 0;
 }
 
-.icon-large {
-  font-size: 50px;
+.icon--large {
+  @extend %icon--large;
+}
+
+.icon--medium {
+  @extend %icon--medium;
 }
 
 .icon--black {
   color: black;
-}
-
-.icon--less-blue {
-  color: #1fb5f6;
 }

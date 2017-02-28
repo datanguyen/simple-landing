@@ -2,6 +2,82 @@
 @import "../../modules/all";
 
 .footer-section {
+  @extend %display-flex;
+  @extend %flex--row--wrap;
+  @extend %flex--horizontally;
   height: 100%;
   background-color: $footer__background--color;
+  color: $footer__text--default-color;
+
+  .footer-section--left,
+  .footer-section--middle,
+  .footer-section---right {
+    width: 27%;
+    margin: 60px 10px;
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .font-simple-line-icon,
+  .font-icon-moon {
+    margin: 0 5px;
+  }
+}
+
+.footer-section__article--typical {
+  @extend %typical-article;
+  width: 100%;
+
+  .article__header {
+    color: white;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+  }
+
+  .article__paragraph {
+    color: $footer__text--default-color;
+  }
+}
+
+.footer-section__table--default {
+  @extend %table--default;
+
+  .table__icon {
+    font-size: 20px;
+    vertical-align: text-top;
+  }
+}
+
+.footer-section__form {
+  @extend %form--default;
+  .form__input-text,
+  .form__input-email,
+  .form__textarea {
+    background-color: #475a70;
+    border: 1px solid #475a70;
+    color: white;
+  }
+
+  .form__textarea {
+    height: 170px;
+  }
+
+  .form__input-radio {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .form__input-radio + .label__radio:before {
+    content: '\e049';
+    font-family: 'Icomoon', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .form__input-radio:checked + .label__radio:before {
+    content: '\e042';
+    color: #1fb5f6;
+    font-family: 'Icomoon', sans-serif;
+    padding: 5px;
+  }
 }

@@ -39,3 +39,8 @@
   -ms-flex: $values;
 }
 
+@mixin  align-self-prefix($value) {
+  align-self: $value;
+  -webkit-align-self: $value;
+}
+
