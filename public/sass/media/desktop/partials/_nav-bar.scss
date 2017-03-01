@@ -1,0 +1,12 @@
+
+.nav-bar__link {
+
+  &--default,
+  &--red-circle-border {
+    display: block;
+  }
+
+  &--toggle {
+    display: none;
+  }
+}

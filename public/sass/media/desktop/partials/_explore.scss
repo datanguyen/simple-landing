@@ -1,25 +1,27 @@
 
 .explore-section {
-  font-size: 80%;
+  font-size: 100%;
 
   > * > * {
-    @include flex-prefix(1 100%);
+    @include flex-prefix(none);
   }
 }
 
 .explore-section--lower {
 
   .explore-section__image--main {
-    margin: 0 auto;
-    padding: 40px 10px;
+    height: 500px;
+    width: 680px;
+    margin: 50px 0;
+    padding: 30px;
   }
 
   .explore-section__article-group {
-    margin-top: 0;
-    margin-left: 5px;
+    margin: 60px 0 0 10px;
   }
 
   .explore-section__article--typical {
-    width: 100%;
+    width: 310px;
+    height: 100px;
   }
 }

@@ -1,11 +1,16 @@
 @import "../../modules/all";
 
 .pricing-section {
+  font-size: 80%;
   height: auto;
   background-color: $pricing__background--color;
 
   > * {
     @extend %display-flex;
+
+    > * {
+      @include flex-prefix(1 100%);
+    }
   }
 }
 
@@ -15,6 +20,10 @@
   .pricing-section__intro-article {
     @extend %introduction-article--upper;
     @extend %introduction--article-size;
+
+    > .article__header {
+      font-size: 30px;
+    }
   }
 }
 
@@ -29,6 +38,7 @@
   .pricing-section__article--vertical {
     @extend %vertical-article;
     @extend %vertical-article--size;
+    margin-bottom: 20px;
 
     .vertical-article__header {
       font-size: 13px;
@@ -76,5 +86,6 @@
   > .paragraph--lower {
     width: 530px;
     margin: 50px 0 50px 0;
+    padding: 0 10px 10px 10px;
   }
 }

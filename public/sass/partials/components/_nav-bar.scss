@@ -36,10 +36,12 @@
 
   &--default {
     @extend %link;
+    display: none;
   }
 
   &--red-circle-border {
     @extend %link;
+    display: none;
     padding: 4px 10px;
     border: 2px solid $nav-bar__link--border-color;
     @include border-radius-prefix(20px);
@@ -47,7 +49,11 @@
 
   &--toggle {
     @extend %link;
-    display: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bolder;
   }
 }
 
