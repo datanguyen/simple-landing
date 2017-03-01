@@ -1,23 +1,11 @@
 @import "../../modules/all";
 
 .pricing-section {
-  height: 120%;
+  height: auto;
   background-color: $pricing__background--color;
 
   > * {
     @extend %display-flex;
-  }
-
-  > .pricing-section--upper {
-    height: 28%;
-  }
-
-  > .pricing-section--intermediate {
-    height: 45%;
-  }
-
-  > .pricing-section--lower {
-    height: 27%;
   }
 }
 
@@ -26,6 +14,7 @@
 
   .pricing-section__intro-article {
     @extend %introduction-article--upper;
+    @extend %introduction--article-size;
   }
 }
 
@@ -39,6 +28,7 @@
 
   .pricing-section__article--vertical {
     @extend %vertical-article;
+    @extend %vertical-article--size;
 
     .vertical-article__header {
       font-size: 13px;
@@ -85,6 +75,6 @@
 
   > .paragraph--lower {
     width: 530px;
-    margin-top: 50px;
+    margin: 50px 0 50px 0;
   }
 }

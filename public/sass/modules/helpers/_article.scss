@@ -2,8 +2,8 @@
 @import "../all";
 
 %article {
-  width: $intro-article__width;
-  height: $intro-article__height;
+  width: 100%;
+  height: 100%;
   text-align: center;
 
   .article__header {
@@ -17,6 +17,12 @@
   }
 }
 
+%introduction--article-size {
+  width: 650px;
+  height: 180px;
+  min-width: 320px;
+}
+
 %introduction-article--upper {
   @extend %article;
   margin-top: 60px;
@@ -26,23 +32,29 @@
   }
 }
 
-%typical-article {
-  @extend %article;
+%typical-article--size {
   width: 310px;
   height: 100px;
+}
+
+%typical-article {
+  @extend %article;
   text-align: left;
 
   .article__header {
-    font-size: 20px;
+    font-size: 17px;
   }
+}
+
+%vertical-article--size {
+  width: 235px;
+  height: 350px;
 }
 
 %vertical-article {
   @extend %article;
   background-color: white;
-  width: 250px;
-  height: 350px;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 5px;
   @include box-shadow-prefix(0 0 6px rgba(0, 0, 0, 0.2));
   @include border-radius-prefix(4px);
@@ -59,11 +71,17 @@
       -moz-opacity: 0.3;
     }
   }
+
+  .vertical-article__content--main {
+    font-size: 15px;
+  }
 }
 
 %home-section__intro-article {
   @extend %article;
   width: 600px;
+  height: 300px;
+  min-width: 320px;
 
   .article__header {
     color: $home__header--default-color;

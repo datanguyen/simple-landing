@@ -2,19 +2,16 @@
 @import "../../modules/all";
 
 .explore-section {
-  height: 130%;
 
   > * {
     @extend %display-flex;
   }
 
   .explore-section--upper {
-    height: 27%;
     background-color: $explore--upper-background-color;
   }
 
   .explore-section--lower {
-    height: 73%;
     background-color: $explore--lower-background-color;
   }
 }
@@ -24,26 +21,31 @@
 
   .explore-section__intro-article {
     @extend %introduction-article--upper;
+    @extend %introduction--article-size;
   }
 }
 
 .explore-section--lower {
   @extend %flex--row--wrap;
   @extend %flex--horizontally;
+  padding-bottom: 50px;
 
   .explore-section__image--main {
     @extend %image--default;
     height: 500px;
     width: 700px;
-    margin: 50px 120px 0 0;
+    margin: 50px 0;
+    padding: 30px;
   }
 
   .explore-section__article-group {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .explore-section__article--typical {
     @extend %typical-article;
+    @extend %typical-article--size;
+
     margin-bottom: 50px;
 
     .article__header > span {

@@ -1,0 +1,25 @@
+
+.pricing-section {
+  font-size: 80%;
+
+  > * > * {
+    @include flex-prefix(1 100%);
+  }
+}
+
+.pricing-section--upper {
+
+  .pricing-section__intro-article {
+    > .article__header {
+      font-size: 30px;
+    }
+  }
+}
+
+.pricing-section--intermediate .pricing-section__article--vertical {
+  margin-bottom: 30px;
+}
+
+.pricing-section--lower .paragraph--lower {
+  padding: 10px;
+}

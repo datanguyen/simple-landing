@@ -1,0 +1,16 @@
+
+.nav-bar__link {
+
+  &--default,
+  &--red-circle-border {
+    display: none;
+  }
+
+  &--toggle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}

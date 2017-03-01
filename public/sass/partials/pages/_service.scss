@@ -2,25 +2,11 @@
 @import "../../modules/all";
 
 .service-section {
-  height: 120%;
+  height: auto;
   background-color: $service__background--color;
 
   > * {
     @extend %display-flex;
-  }
-
-  .service-section--upper {
-    height: 28%;
-  }
-
-  > .service-section--intermediate {
-    height: 54%;
-    width: 90%;
-    margin: auto;
-  }
-
-  > .service-section--lower {
-    height: 18%;
   }
 }
 
@@ -29,6 +15,7 @@
 
   .service-section__intro-article {
     @extend %introduction-article--upper;
+    @extend %introduction--article-size;
   }
 }
 
@@ -38,15 +25,23 @@
 
   .service-section__article--typical {
     @extend %typical-article;
+    margin: 0 0 0 30px;
+    height: 200px;
+    width: 380px;
+    padding: 0 0 0 80px;
   }
 
   .font-simple-line-icon,
   .font-icon-moon {
-    padding: 25px 20px 30px 0;
+    position: relative;
+    left: -70px;
+    top: -160px;
   }
 }
 
 .service-section--lower {
+  margin: 20px 0 50px 0;
+
   .lower-service__button--blue {
     @extend %button;
     @extend %button--small;

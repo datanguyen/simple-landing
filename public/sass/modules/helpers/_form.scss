@@ -2,6 +2,7 @@
 
 %form--default {
   width: 100%;
+  @include placeholder-prefix;
 
   .form__input-text,
   .form__input-email,
@@ -25,11 +26,6 @@
 
   label {
     margin-right: 25px;
-  }
-
-  input::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    font-family: $default-font;
   }
 
   > * {

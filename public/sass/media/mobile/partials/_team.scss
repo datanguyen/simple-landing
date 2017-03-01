@@ -1,0 +1,20 @@
+
+.team-section {
+  font-size: 80%;
+
+  > * > * {
+    @include flex-prefix(1 100%);
+  }
+}
+
+.team-section--lower {
+  padding-bottom: 30px;
+
+  .team-section__info-card {
+    height: 450px;
+
+    .team-section__article--vertical {
+      width: 100%;
+    }
+  }
+}

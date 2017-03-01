@@ -1,0 +1,9 @@
+
+@media screen and (max-width: $mobile--max-width){
+  @import "partials/nav-bars";
+  @import "partials/explore";
+  @import "partials/pricing";
+  @import "partials/service";
+  @import "partials/team";
+  @import "partials/footer";
+}

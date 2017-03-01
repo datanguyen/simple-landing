@@ -2,8 +2,6 @@
 @import "../base";
 
 .nav-bar--fixed {
-  @extend %display-flex;
-  @extend %flex--row--wrap;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -17,7 +15,7 @@
 
 .nav-bar__logo--left-fixed {
   @extend %nav-bar__element;
-  margin-right: auto;
+  float: left;
   font-size: $nav-bar__logo--default-font-size;
   font-weight: bolder;
   padding-left: 5%;
@@ -30,7 +28,8 @@
 
 .nav-bar__list--right {
   @extend %nav-bar__element;
-  padding-right: 5%;
+  float: right;
+  margin-right: 5%;
 }
 
 .nav-bar__link {
@@ -55,5 +54,5 @@
 %nav-bar__element {
   display: block;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }

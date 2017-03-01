@@ -1,19 +1,11 @@
 @import "../../modules/all";
 
 .team-section {
-  height: 110%;
+  height: auto;
   background-color: $team__background--color;
 
   > * {
     @extend %display-flex;
-  }
-
-  .team-section--upper {
-    height: 28%;
-  }
-
-  .team-section--lower {
-    height: 72%;
   }
 }
 
@@ -22,6 +14,7 @@
 
   .team-section__intro-article {
     @extend %introduction-article--upper;
+    @extend %introduction--article-size;
   }
 }
 
@@ -29,11 +22,8 @@
   @extend %flex--row--wrap;
   @extend %flex--horizontally;
 
-  > * {
-    margin: 35px 10px;
-  }
-
   .team-section__info-card {
+    margin: 10px 15px;
 
     .avatar-image--rounded {
       @extend %image--default;
@@ -50,22 +40,11 @@
     .team-section__article--vertical {
       @extend %vertical-article;
       padding-top: 30px;
-      width: 340px;
+      width: 310px;
       height: 360px;
       position: relative;
       top: -70px;
       z-index: 1;
-    }
-
-    .icon-group {
-      display: inline-block;
-      margin-top: 20px;
-
-      > * {
-        margin: 5px;
-        color: black;
-        font-weight: bold;
-      }
     }
   }
 }
@@ -80,6 +59,17 @@
 
     .header__note {
       text-transform: capitalize;
+    }
+  }
+
+  .icon-group {
+    display: inline-block;
+    margin-top: 20px;
+
+    > * {
+      margin: 5px;
+      color: black;
+      font-weight: bold;
     }
   }
 }
