@@ -8,8 +8,8 @@ $simple-line-icon-url: "../fonts/simple-line-icons/Simple-Line-Icons";
 
 //breakpoint
 $mobile--max-width: 425px;
-$tablet--max-width: 768px;
-$desktop--max-width: 1024px;
+$tablet--min-width: 720px;
+$desktop--min-width: 1024px;
 
 //navigation bars
 $nav-bar--height: 55px;

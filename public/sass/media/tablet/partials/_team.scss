@@ -1,0 +1,21 @@
+
+.team-section {
+  font-size: 100%;
+
+  .team-section--upper > *,
+  .team-section--lower > * {
+    @include flex-prefix(none);
+  }
+}
+
+.team-section--lower .team-section__info-card {
+
+  &#team__card-one,
+  &#team__card-two {
+    width: 350px;
+  }
+
+  &#team__card-three {
+    width: 95%;
+  }
+}

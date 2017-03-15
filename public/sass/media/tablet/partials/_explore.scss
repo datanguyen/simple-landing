@@ -1,0 +1,31 @@
+
+
+.explore-section {
+  font-size: 100%;
+
+  .explore-section__intro-article {
+    @include flex-prefix(none);
+  }
+}
+
+.explore-section--lower {
+
+  .explore-section__image--main {
+    padding: 40px;
+    margin-bottom: 0;
+  }
+
+  .explore-section__article-group {
+    padding-left: 50px;
+
+    .explore-section__article--typical {
+
+      &#explore__article-one,
+      &#explore__article-two {
+        width: 45%;
+        margin-right: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}

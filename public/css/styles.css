@@ -604,7 +604,8 @@ html, body {
   .footer-section__article--typical .article__header {
     color: white;
     margin: 30px 0 10px 0;
-    font-weight: normal; }
+    font-weight: normal;
+    padding-left: 5px; }
   .footer-section__article--typical .article__paragraph {
     color: #73879d; }
 
@@ -714,5 +715,82 @@ html, body {
       flex: none;
       -webkit-flex: none;
       -ms-flex: none; } }
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .nav-bar__link--default, .nav-bar__link--red-circle-border {
+    display: block; }
+  .nav-bar__link--toggle {
+    display: none; }
+  .explore-section {
+    font-size: 100%; }
+    .explore-section .explore-section__intro-article {
+      flex: none;
+      -webkit-flex: none;
+      -ms-flex: none; }
+  .explore-section--lower .explore-section__image--main {
+    padding: 40px;
+    margin-bottom: 0; }
+  .explore-section--lower .explore-section__article-group {
+    padding-left: 50px; }
+    .explore-section--lower .explore-section__article-group .explore-section__article--typical#explore__article-one, .explore-section--lower .explore-section__article-group .explore-section__article--typical#explore__article-two {
+      width: 45%;
+      margin-right: 30px;
+      display: inline-block; }
+  .pricing-section {
+    font-size: 100%; }
+    .pricing-section .pricing-section--upper > *,
+    .pricing-section .pricing-section--intermediate > * {
+      flex: none;
+      -webkit-flex: none;
+      -ms-flex: none; }
+  .pricing-section--intermediate .pricing-section__article--vertical {
+    width: 335px; }
+  .pricing-section--lower {
+    width: 80%;
+    margin: auto; }
+  .service-section {
+    font-size: 100%; }
+    .service-section .service-section--upper > *,
+    .service-section .service-section--intermediate > * {
+      flex: none;
+      -webkit-flex: none;
+      -ms-flex: none; }
+  .service-section--intermediate .service-section__article--typical#service__article-one, .service-section--intermediate .service-section__article--typical#service__article-two, .service-section--intermediate .service-section__article--typical#service__article-three, .service-section--intermediate .service-section__article--typical#service__article-four {
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    padding-left: 35px; }
+    .service-section--intermediate .service-section__article--typical#service__article-one .font-icon-moon,
+    .service-section--intermediate .service-section__article--typical#service__article-one .font-simple-line-icon, .service-section--intermediate .service-section__article--typical#service__article-two .font-icon-moon,
+    .service-section--intermediate .service-section__article--typical#service__article-two .font-simple-line-icon, .service-section--intermediate .service-section__article--typical#service__article-three .font-icon-moon,
+    .service-section--intermediate .service-section__article--typical#service__article-three .font-simple-line-icon, .service-section--intermediate .service-section__article--typical#service__article-four .font-icon-moon,
+    .service-section--intermediate .service-section__article--typical#service__article-four .font-simple-line-icon {
+      top: -165px; }
+  .service-section--intermediate .service-section__article--typical#service__article-two, .service-section--intermediate .service-section__article--typical#service__article-four {
+    padding-left: 50px; }
+  .service-section--intermediate .service-section__article--typical#service__article-five, .service-section--intermediate .service-section__article--typical#service__article-six {
+    margin-left: 25px; }
+  .team-section {
+    font-size: 100%; }
+    .team-section .team-section--upper > *,
+    .team-section .team-section--lower > * {
+      flex: none;
+      -webkit-flex: none;
+      -ms-flex: none; }
+  .team-section--lower .team-section__info-card#team__card-one, .team-section--lower .team-section__info-card#team__card-two {
+    width: 350px; }
+  .team-section--lower .team-section__info-card#team__card-three {
+    width: 95%; }
+  .footer-section {
+    font-size: 100%; }
+    .footer-section .footer-section--left,
+    .footer-section .footer-section--middle {
+      flex: none;
+      -webkit-flex: none;
+      -ms-flex: none;
+      width: 45%;
+      padding: 10px; }
+    .footer-section .footer-section---right {
+      padding: 0 30px; } }
 
 /*# sourceMappingURL=styles.css.map */

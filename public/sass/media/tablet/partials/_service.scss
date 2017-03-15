@@ -1,0 +1,41 @@
+
+.service-section {
+  font-size: 100%;
+
+  .service-section--upper > *,
+  .service-section--intermediate > * {
+    @include flex-prefix(none);
+  }
+}
+
+.service-section--intermediate {
+
+  .service-section__article--typical {
+
+    &#service__article-one,
+    &#service__article-two,
+    &#service__article-three,
+    &#service__article-four {
+      width: 350px;
+      height: auto;
+      display: inline-block;
+      padding-left: 35px;
+
+      .font-icon-moon,
+      .font-simple-line-icon {
+        top: -165px;
+      }
+    }
+
+    &#service__article-two,
+    &#service__article-four {
+      padding-left: 50px;
+    }
+
+    &#service__article-five,
+    &#service__article-six {
+      margin-left: 25px;
+    }
+  }
+}
+

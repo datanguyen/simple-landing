@@ -1,0 +1,19 @@
+
+.pricing-section {
+  font-size: 100%;
+
+  .pricing-section--upper > *,
+  .pricing-section--intermediate > * {
+    @include flex-prefix(none);
+  }
+}
+
+.pricing-section--intermediate .pricing-section__article--vertical {
+  width: 335px;
+
+}
+
+.pricing-section--lower {
+  width: 80%;
+  margin: auto;
+}

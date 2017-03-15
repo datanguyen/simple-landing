@@ -1,0 +1,15 @@
+
+.footer-section {
+  font-size: 100%;
+
+  .footer-section--left,
+  .footer-section--middle {
+    @include flex-prefix(none);
+    width: 45%;
+    padding: 10px;
+  }
+
+  .footer-section---right {
+    padding: 0 30px;
+  }
+}
