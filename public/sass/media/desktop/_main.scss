@@ -1,5 +1,4 @@
-
-@media screen and (min-width: $desktop--min-width){
+@media screen and (min-width: $desktop--min-width) {
   @import "partials/nav-bar";
   @import "partials/explore";
   @import "partials/pricing";

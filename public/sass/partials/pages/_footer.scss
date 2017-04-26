@@ -1,11 +1,9 @@
-
 @import "../../modules/all";
 
 .footer-section {
   @extend %display-flex;
   @extend %flex--row--wrap;
   @extend %flex--horizontally;
-
   font-size: 80%;
   height: auto;
   background-color: $footer__background--color;

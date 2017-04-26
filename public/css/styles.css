@@ -402,6 +402,8 @@ html, body {
 
 .nav-bar__link--default {
   display: none; }
+  .nav-bar__link--default:hover {
+    border-bottom: 1px solid red; }
 
 .nav-bar__link--red-circle-border {
   display: none;

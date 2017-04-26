@@ -10,8 +10,8 @@
 <body>
 
 <nav class="nav-bar--fixed">
-    <div class="nav-bar__logo--left-fixed"><span class="nav-bar--red">R</span>WD</div>
-    <div class="nav-bar__list--right">
+    <main class="nav-bar__logo--left-fixed"><span class="nav-bar--red">R</span>WD</main>
+    <main class="nav-bar__list--right">
         <a class="nav-bar__link--default" href="#home">Home</a>
         <a class="nav-bar__link--default" href="#explore">Explore</a>
         <a class="nav-bar__link--default" href="#pricing">Pricing</a>
@@ -19,7 +19,7 @@
         <a class="nav-bar__link--default" href="#team">Team</a>
         <a class="nav-bar__link--red-circle-border" href="#footer">Sign up free</a>
         <a class="nav-bar__link--toggle"><span class="font-icon-moon" data-icon="&#xe026"></span></a>
-    </div>
+    </main>
 </nav>
 
 <section id="home" class="home-section">
@@ -166,7 +166,7 @@
             </p>
             <span class="font-simple-line-icon icon--large" data-icon="&#xe026"></span>
         </article>
-        <article class="service-section__article--typical" id="service__article-two" >
+        <article class="service-section__article--typical" id="service__article-two">
             <h1 class="article__header">Award-winning Landing Page</h1>
             <p class="article__paragraph">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -316,15 +316,18 @@
                     <td class="table__content">Lorem ipsum dolor sit amet, consectutuer adipiscing elit.</td>
                 </tr>
                 <tr>
-                    <td class="table__icon"><span class="font-simple-line-icon icon--default" data-icon="&#xe600"></span></td>
+                    <td class="table__icon"><span class="font-simple-line-icon icon--default"
+                                                  data-icon="&#xe600"></span></td>
                     <td class="table__content">+ 1235 2355 98</td>
                 </tr>
                 <tr>
-                    <td class="table__icon"><span class="font-simple-line-icon icon--default" data-icon="&#xe086"></span></td>
+                    <td class="table__icon"><span class="font-simple-line-icon icon--default"
+                                                  data-icon="&#xe086"></span></td>
                     <td class="table__content">info@yoursite.com</td>
                 </tr>
                 <tr>
-                    <td class="table__icon"><span class="font-simple-line-icon icon--default" data-icon="&#xe037"></span></td>
+                    <td class="table__icon"><span class="font-simple-line-icon icon--default"
+                                                  data-icon="&#xe037"></span></td>
                     <td class="table__content">www.yoursite.com</td>
                 </tr>
             </table>
@@ -343,22 +346,26 @@
             <h1 class="article__header">Drop us a line</h1>
             <span class="font-icon-moon icon--medium" data-icon="&#xe115"></span>
             <form class="footer-section__form">
-                <div>
+                <section>
+                    <label for="your-name"></label>
                     <input type="text" id="your-name" class="form__input-text" placeholder="  Name">
-                </div>
-                <div>
+                </section>
+                <section>
                     <input type="radio" id="male" name="your-gender" class="form__input-radio" value="Male" checked>
                     <label for="male" class="label__radio">Male</label>
                     <input type="radio" id="female" name="your-gender" class="form__input-radio" value="  Female">
                     <label for="female" class="label__radio">Female</label>
-                </div>
-                <div>
+                </section>
+                <section>
+                    <label for="your-email"></label>
                     <input type="email" id="your-email" class="form__input-email" placeholder="  Email">
-                </div>
-                <div>
-                    <textarea name="yourMessage" class="form__textarea" placeholder=" Message"></textarea>
-                </div>
-                <button class="form__button">SEND MESSAGE</button>
+                </section>
+                <section>
+                    <label for="your-message"></label>
+                    <textarea name="yourMessage" id="your-message" class="form__textarea"
+                              placeholder=" Message"></textarea>
+                </section>
+                <input class="form__button" type="submit" value="SEND MESSAGE">
             </form>
         </article>
     </section>
