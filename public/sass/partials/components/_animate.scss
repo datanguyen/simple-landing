@@ -1,0 +1,40 @@
+@import "../../modules/all";
+
+@include animation-name(fadeIn) {
+  from {
+    @include opacity(0);
+  }
+  to {
+    @include opacity(1);
+  }
+}
+
+@include animation-name(slideUp) {
+  from {
+    overflow-y: hidden;
+    height: 25%;
+  }
+  to {
+    overflow-y: visible;
+  }
+}
+
+@include animation-name(slideUpFixedHeight) {
+  from {
+    @include opacity(0);
+    margin-top: 80px;
+  }
+  to {
+    @include opacity(1)
+  }
+}
+
+@include animation-name(articleSlideSide) {
+  from {
+    @include opacity(0);
+    margin-left: 80px;
+  }
+  to {
+    @include opacity(1)
+  }
+}

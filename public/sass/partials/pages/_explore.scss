@@ -19,6 +19,16 @@
   .explore-section--lower {
     background-color: $explore--lower-background-color;
   }
+
+}
+
+.explore-section:target {
+  .explore-section__intro-article {
+    @include animation(slideUpFixedHeight 1s)
+  }
+  .explore-section--lower {
+    @include animation(articleSlideSide 1.25s)
+  }
 }
 
 .explore-section--upper {

@@ -14,6 +14,12 @@
   }
 }
 
+.team-section:target {
+  .team-section--lower {
+    @include animation(slideUpFixedHeight 1s)
+  }
+}
+
 .team-section--upper {
   @extend %flex--perfect-centering;
 

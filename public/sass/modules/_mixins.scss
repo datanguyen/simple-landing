@@ -60,3 +60,31 @@
   }
 }
 
+@mixin animation($value) {
+  animation: $value;
+  -webkit-animation: $value;
+  -moz-animation: $value;
+}
+
+@mixin opacity($value) {
+  opacity: $value;
+  -moz-opacity: $value;
+}
+
+@mixin animation-name ($animation-name) {
+  @-webkit-keyframes #{$animation_name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation_name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation_name} {
+    @content;
+  }
+
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}

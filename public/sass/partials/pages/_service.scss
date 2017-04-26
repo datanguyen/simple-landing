@@ -15,6 +15,20 @@
   }
 }
 
+.service-section:target {
+  .service-section__intro-article {
+    @include animation(slideUpFixedHeight 0.75s)
+  }
+  .service-section__article--typical {
+    @include animation(fadeIn 1s);
+
+    .font-icon-moon,
+    .font-simple-line-icon {
+      @include animation(fadeIn 3s);
+    }
+  }
+}
+
 .service-section--upper {
   @extend %flex--perfect-centering;
 
