@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules
+
+.tern-port
+.idea
+
+package-lock.json
