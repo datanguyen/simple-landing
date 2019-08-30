@@ -1,13 +1,5 @@
-# Nguyễn Tấn Đạt - HTML/CSS - FCP
-
-Responsive Web Design
+Simple Lading Page
 ----------
-
 Pre-requisites: Node.js 4.x or later
 
-**Install Project Dependencies:** ` npm install`
-
-**Run:** 
-  
--   **build:** `npm run sass`
--  **run server**: `npm run serve`
+Run: `npm install` -- `npm run serve`

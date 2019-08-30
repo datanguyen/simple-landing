@@ -1,5 +1,5 @@
 {
-    "name": "fcp-htmlcss",
+    "name": "simple-landing",
     "version": "1.0.0",
     "description": "RWD - Responsive Web Design Assignment",
     "main": "index.js",
@@ -10,15 +10,11 @@
     "keywords": [
         "RWD"
     ],
-    "author": "kms-technology",
-    "repository": {
-        "type": "git",
-        "url": "git@git.kms-technology.com:kms-training/fcp-htmlcss.git"
-    },
     "devDependencies": {
         "browser-sync": "^2.14.0",
         "gulp": "^3.9.1",
         "gulp-sass": "^2.3.2",
         "gulp-sourcemaps": "^1.6.0"
-    }
+    },
+    "license": "MIT"
 }
