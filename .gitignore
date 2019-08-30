@@ -4,4 +4,6 @@ node_modules
 .tern-port
 .idea
 
+`/dist/
+
 package-lock.json
