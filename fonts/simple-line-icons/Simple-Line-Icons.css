@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "simple-line-icons";
+    src: url("Simple-Line-Icons.eot"); /* IE9 */
+    src: url("Simple-Line-Icons.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Simple-Line-Icons.woff") format("woff"), /* chrome, firefox */
+    url("Simple-Line-Icons.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Simple-Line-Icons.svg#simple-line-icons") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
